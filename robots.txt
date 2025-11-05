@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Thando904.github.io/website-part-3/sitemap.xml

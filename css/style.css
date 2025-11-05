@@ -1,0 +1,356 @@
+/* ============= GLOBAL STYLES ============= */
+:root {
+  --max-width: 1100px;
+  --base-font: 'Segoe UI', Arial, sans-serif;
+  --primary-color: #c84b31;
+  --secondary-color: #f3d2c1;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--base-font);
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+/* Responsive container */
+.container { max-width: var(--max-width); margin: auto; padding: 1rem; }
+
+/* ============= NAVIGATION ============= */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary-color);
+  padding: 1rem;
+}
+nav ul { list-style: none; display: flex; gap: 1rem; }
+nav a { color: white; text-decoration: none; padding: .4rem .8rem; border-radius: 4px; }
+nav a:hover, nav a:focus { background: var(--secondary-color); color: #000; }
+
+/* ============= MEDIA QUERIES ============= */
+@media (max-width: 768px) {
+  nav ul { display: none; flex-direction: column; }
+  nav button { display: block; }
+}
+
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fffaf0;
+  color: #333;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+  background: #b5651d;
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  text-decoration: underline;
+  color: #f0d6b2;
+}
+
+/* Main section styles */
+main,
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Hero section */
+.hero {
+  background-image: url('/images/Bakery.jpg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h2 {
+  margin-bottom: 15px;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  background: #b5651d;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #9a4e13;
+}
+
+/* Form styling */
+form input,
+form textarea,
+form button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+form button {
+  background: #b5651d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #9a4e13;
+}
+
+/* Lists styling */
+ul {
+  list-style-type: disc;
+  margin-left: 40px;
+  padding: 0;
+}
+
+/* Footer styles */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+/* Products gallery layout */
+.product-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Product item styles */
+.product-item {
+  text-align: center;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.product-item img:hover {
+  transform: scale(1.05);
+}
+
+.product-name {
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: #b5651d;
+}
+
+.product-price {
+  color: #666;
+  font-size: 1rem;
+  margin: 0;
+}
+/* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+    }
+
+    /* Nav bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #00bcd4;
+    }
+
+    /* Hamburger menu (hidden on desktop) */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      height: 3px;
+      width: 25px;
+      background: white;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+      }
+
+      .nav-links a {
+        padding: 1rem 0;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #444;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    /* Main content */
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+	/* Footer styling */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 1.5rem 1rem;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .footer-nav a:hover {
+      color: #00bcd4;
+    }
+
+    .footer-info {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
