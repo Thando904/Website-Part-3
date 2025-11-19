@@ -4,7 +4,6 @@ This is the Sweet Crumbs bakery website project for Web Development Part 3.
 
 ## 🧁 Live Links
 - GitHub Repository: https://github.com/Thando904/website-part-3
-- (Optional) GitHub Pages: https://Thando904.github.io/website-part-3/
 
 ## 📋 Part 2 Feedback Addressed
 - Added Changelog and README.

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sweet Crumbs Bakery — contact for enquiries and custom orders.">
+  <title>Enquiry - Sweet Crumbs Bakery</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Sweet Crumbs Bakery</div>
+
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="SweetCrumbsHomepage.html">Home</a></li>
+        <li><a href="SweetCrumbsAboutUs.html">About Us</a></li>
+        <li><a href="SweetCrumbsProducts.html">Products</a></li>
+        <li><a href="SweetCrumbsEnquiry.html" class="active">Enquiry</a></li>
+        <li><a href="SweetCrumbsContactPage.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section>
+      <h2>We’d love to hear from you!</h2>
+      <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Enquiry:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Sweet Crumbs Bakery | Soweto</p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="javascript/nav.js"></script>
+</body>
+</html>
+
+

@@ -51,7 +51,7 @@ body {
 
 /* Header styles */
 header {
-  background: #b5651d;
+  background: #c84b31; /* BRIGHT & MATCHING */
   color: #fff;
   padding: 15px 20px;
   text-align: center;
@@ -86,7 +86,7 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a.active {
   text-decoration: underline;
-  color: #f0d6b2;
+  color: #f3d2c1;
 }
 
 /* Main section styles */
@@ -180,7 +180,7 @@ ul {
 
 /* Footer styles */
 footer {
-  background: #333;
+  background: #c84b31; /* BRIGHT FOOTER */
   color: white;
   text-align: center;
   padding: 15px;
@@ -226,131 +226,123 @@ footer {
   font-size: 1rem;
   margin: 0;
 }
-/* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-    }
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    header {
-      background-color: #333;
-      color: white;
-    }
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
 
-    /* Nav bar */
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-    }
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #c84b31; /* BRIGHT */
+}
 
-    .navbar .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
 
-    .nav-links {
-      display: flex;
-      gap: 1.5rem;
-    }
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
 
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
 
-    .nav-links a:hover {
-      color: #00bcd4;
-    }
+.nav-links a:hover {
+  color: #f3d2c1;
+}
 
-    /* Hamburger menu (hidden on desktop) */
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-    }
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
 
-    .hamburger span {
-      height: 3px;
-      width: 25px;
-      background: white;
-      margin: 4px 0;
-      transition: 0.4s;
-    }
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
 
-    /* Responsive */
-    @media (max-width: 768px) {
-      .nav-links {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        flex-direction: column;
-        align-items: center;
-        display: none;
-      }
+/* Mobile menu */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #c84b31;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
 
-      .nav-links a {
-        padding: 1rem 0;
-        width: 100%;
-        text-align: center;
-        border-top: 1px solid #444;
-      }
+  .nav-links a {
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #f3d2c1;
+  }
 
-      .nav-links.show {
-        display: flex;
-      }
+  .nav-links.show {
+    display: flex;
+  }
 
-      .hamburger {
-        display: flex;
-      }
-    }
+  .hamburger {
+    display: flex;
+  }
+}
 
-    /* Main content */
-    main {
-      padding: 2rem;
-      text-align: center;
-    }
-	/* Footer styling */
-    footer {
-      background-color: #333;
-      color: white;
-      padding: 1.5rem 1rem;
-    }
+/* Main content */
+main {
+  padding: 2rem;
+  text-align: center;
+}
 
-    .footer-nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      margin-bottom: 1rem;
-    }
+/* Footer styling */
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
 
-    .footer-nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
 
-    .footer-nav a:hover {
-      color: #00bcd4;
-    }
+.footer-nav a:hover {
+  color: #f3d2c1;
+}
 
-    .footer-info {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #ccc;
-    }
-
+.footer-info {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ffe0d0;
+}

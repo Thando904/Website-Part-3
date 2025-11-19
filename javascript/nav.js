@@ -1,11 +1,23 @@
+// nav.js
 document.addEventListener('DOMContentLoaded', () => {
-  const btn = document.getElementById('navToggle');
-  const nav = document.getElementById('siteNav');
-  if (!btn || !nav) return;
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.getElementById('navLinks');
 
-  btn.addEventListener('click', () => {
-    const expanded = btn.getAttribute('aria-expanded') === 'true';
-    btn.setAttribute('aria-expanded', String(!expanded));
-    nav.hidden = expanded;
+  if (!hamburger || !navLinks) return;
+
+  // Toggle menu
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+
+  // Optional: close menu when a link is clicked (for mobile)
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (navLinks.classList.contains('show')) {
+        navLinks.classList.remove('show');
+      }
+    });
   });
 });
+
+

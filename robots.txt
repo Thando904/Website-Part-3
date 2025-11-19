@@ -1,4 +1,6 @@
+# Allow all crawlers full access
 User-agent: *
 Allow: /
 
-Sitemap: https://Thando904.github.io/website-part-3/sitemap.xml
+# Link to sitemap
+Sitemap: http://127.0.0.1:5500/sitemap.html
